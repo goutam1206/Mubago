@@ -6,7 +6,6 @@ from google.auth.transport import requests
 from dotenv import load_dotenv
 from utils.gutils.bq_utils import insert_user_to_bigquery
 import os
-
 from utils.gutils.connect_to_bg import connect_bigquery
 
 load_dotenv()
