@@ -10,7 +10,11 @@ from utils.gutils.connect_to_bg import connect_bigquery
 
 load_dotenv()
 
-app = FastAPI()
+app = FastAPI(
+    title="Mubago API",
+    docs_url="/api/docs",          # Swagger endpoint
+    openapi_url="/api/openapi.json"  # OpenAPI schema endpoint
+)
 
 # Allow CORS for your frontend (localhost for now)
 app.add_middleware(
